@@ -82,7 +82,7 @@ void linear_regression(double* x, double* y, int size) {
    double slope = calculate_slope(x, y, x_mean, y_mean, size);
    double intercept = calculate_intercept(x_mean, y_mean, slope);
 
-   printf("Regression line equation: y = %.2fx + %.2f\n", slope, intercept);
+   // printf("Regression line equation: y = %.2fx + %.2f\n", slope, intercept);
 }
 
 // Function to calculate the coefficients of the quadratic equation
@@ -116,7 +116,7 @@ void quadratic_regression(double* x, double* y, int size) {
    double a, b, c;
    calculate_quadratic_coefficients(x, y, size, &a, &b, &c);
 
-   printf("Quadratic regression equation: y = %.20fx^2 + %.20fx + %.20f\n", a, b, c);
+   // printf("Quadratic regression equation: y = %.20fx^2 + %.20fx + %.20f\n", a, b, c);
 }
 
 // Function to calculate the coefficients of the cubic equation
@@ -156,7 +156,7 @@ void cubic_regression(float* x, float* y, int size) {
    double a, b, c, d;
    calculate_cubic_coefficients(x, y, size, &a, &b, &c, &d);
 
-   printf("Cubic regression equation: y = %.20fx^3 + %.20fx^2 + %.20fx + %.20f\n", a, b, c, d);
+   // printf("Cubic regression equation: y = %.20fx^3 + %.20fx^2 + %.20fx + %.20f\n", a, b, c, d);
 }
 
 int main() {
@@ -198,16 +198,16 @@ int main() {
 
       fclose(file);
 
-      printf("File '%s' data:\n", filename);
+      // printf("File '%s' data:\n", filename);
       t = clock();
       cubic_regression(x, y, num_samples);
       t = clock() - t;
 
       time = ((double)t)/CLOCKS_PER_SEC;
-      printf("TIME: %.20fs\n", time);
+      // printf("TIME: %.20fs\n", time);
       total_t += ((double)t)/CLOCKS_PER_SEC;
-      printf("\n");
+      // printf("\n");
    }
-   printf("TOTAL TIME: %fs\n", total_t);
+   printf("TOTAL TIME: %.12fs\n", total_t);
    return 0;
 }

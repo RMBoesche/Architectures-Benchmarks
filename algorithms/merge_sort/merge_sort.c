@@ -138,13 +138,13 @@ int main()
     t = clock() - t;
 
     time = ((double)t)/CLOCKS_PER_SEC;
-    printf("TIME: %.20fs\n", time);
+    // printf("TIME: %.20fs\n", time);
     total_t += ((double)t)/CLOCKS_PER_SEC;
 
     // Free the memory allocated for the array
     free(array);
   }
-  printf("TOTAL TIME: %fs\n", total_t);
+  printf("TOTAL TIME: %.12fs\n", total_t);
 
   // Close the file
   fclose(file);

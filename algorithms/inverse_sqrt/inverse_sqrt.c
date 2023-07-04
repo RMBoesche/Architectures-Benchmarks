@@ -23,14 +23,14 @@ int main() {
   double total_t = 0;
 
   t = clock();
-  for (i=0;i<1000000000;i++) {
+  for (i=0;i<25000000;i++) {
     calcInvSqRoot(n);
     n = n*2;
   }
   t = clock() - t;
 
   total_t = ((double)t)/CLOCKS_PER_SEC;
-  printf("TOTAL TIME: %fs\n", total_t);
+  printf("TOTAL TIME: %.12fs\n", total_t);
 
   return 0;
 }
