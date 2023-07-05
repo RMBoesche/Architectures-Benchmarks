@@ -89,7 +89,7 @@ double linear_regression() {
 
    for (int file_num = 1; file_num <= NUM_FILES; file_num++) {
       FILE* file;
-      char filename[20];
+      char filename[50];
       sprintf(filename, "../linear_regression/data/data%d.txt", file_num);
 
       file = fopen(filename, "r");
