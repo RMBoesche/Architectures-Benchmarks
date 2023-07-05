@@ -1,0 +1,3 @@
+inverse_sqrt: 0.714202200000s
+linear_regression: 0.472392200000s
+merge_sort: 0.770759600000s
