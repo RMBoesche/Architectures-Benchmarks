@@ -1,8 +1,0 @@
-CONFIG:
-cpu: i7 10610U @1.80GHz
-ram: 16GB 2667MHz
-
-RESULTS:
-inverse_sqrt: 0.714202200000s
-linear_regression: 0.472392200000s
-merge_sort: 0.770759600000s
