@@ -7,8 +7,9 @@
 #define MAX_SAMPLES 100000
 #define MIN_VALUE 1
 #define MAX_VALUE 100
-#define NUM_FILES 500
+#define NUM_FILES 50
 #define ROUNDS 5
+#define NUM_LOOPS 250000
 
 float calcInvSqRoot( float n ) {
 
@@ -32,7 +33,7 @@ double inverse_sqrt() {
   double total_t = 0;
 
   t = clock();
-  for (i=0;i<25000000;i++) {
+  for (i=0;i<NUM_LOOPS;i++) {
     calcInvSqRoot(n);
     n = n*2;
   }
