@@ -1,3 +1,11 @@
-inverse_sqrt: 0.003081400000s
-linear_regression: 0.016960800000s
-merge_sort: 0.327148200000s
+inverse_sqrt: 0.003081400000s (0.1001455J)
+linear_regression: 0.016960800000s (0.551226J)
+merge_sort: 0.327148200000s (10.6323165J)
+
+CPU 1 CORE UTILIZATION:
+IDLE - 30%
+TESTING - 60% (MAX 80%)
+
+POWER:
+IDLE - 16...22W
+TESTING - 30...35W -- 32.5W
