@@ -1,3 +1,11 @@
 inverse_sqrt: 0.003223200000s
 linear_regression: 0.020195600000s
 merge_sort: 0.365724000000s
+
+i7-10610U @1.8GHz
+CPU UTILIZATION:
+IDLE - 7%
+TESTING - 30% 
+
+POWER:
+TDP - 15W
